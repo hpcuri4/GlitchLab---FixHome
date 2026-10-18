@@ -1,0 +1,471 @@
+/* ==========================================================================
+   PÁGINA DE INICIO DE SESIÓN DE CLIENTE (FIXHOME) - ESTILOS COMPLETOS
+   ========================================================================== */
+
+/* 1. Contenedor global de la página */
+.pagina-login-cliente {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fondo);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+}
+
+/* 2. Encabezado superior simplificado */
+.encabezado-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 24px 5%;
+    background-color: transparent;
+}
+
+.encabezado-login .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--verde-oscuro);
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.encabezado-login .logo img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.volver-sitio {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--verde);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.volver-sitio:hover {
+    background-color: #eef5ef;
+    color: var(--verde-oscuro);
+}
+
+/* 3. Estructura principal en 2 columnas */
+.contenedor-login-cliente {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 56px;
+    width: 100%;
+    max-width: 1240px;
+    margin: 10px auto 50px;
+    padding: 0 5%;
+    flex: 1;
+}
+
+/* 4. Columna izquierda: Presentación visual */
+.presentacion-cliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.presentacion-cliente .etiqueta-bienvenida {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    background-color: #e7f4eb;
+    color: var(--verde);
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.presentacion-cliente h1 {
+    font-size: clamp(34px, 4.5vw, 54px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -2px;
+    color: var(--texto);
+    margin-bottom: 16px;
+}
+
+.presentacion-cliente h1 span {
+    color: var(--verde);
+}
+
+.presentacion-cliente > p {
+    font-size: clamp(16px, 1.8vw, 20px);
+    color: var(--texto-secundario);
+    line-height: 1.5;
+    margin-bottom: 28px;
+    max-width: 520px;
+}
+
+/* Tarjeta contenedora de la imagen principal */
+.imagen-login-cliente {
+    position: relative;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    box-shadow: 0 12px 32px rgba(16, 76, 64, 0.08);
+    border: 1px solid #eef2eb;
+}
+
+.imagen-login-cliente img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.imagen-login-cliente:hover img {
+    transform: scale(1.02);
+}
+
+/* Banner flotante de confianza */
+.tarjeta-confianza {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 22px;
+    background-color: #ffffff;
+    border: 1px solid #eef2eb;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(80, 65, 30, 0.04);
+}
+
+.icono-confianza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--verde);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.tarjeta-confianza strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--verde-oscuro);
+    margin-bottom: 3px;
+}
+
+.tarjeta-confianza p {
+    font-size: 13px;
+    color: var(--texto-secundario);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* 5. Columna derecha: Tarjeta del Formulario */
+.tarjeta-login-cliente {
+    background-color: #ffffff;
+    border: 1px solid #faf5eb;
+    border-radius: 28px;
+    padding: 44px 40px;
+    box-shadow: 0 12px 40px rgba(80, 65, 30, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.tarjeta-login-cliente:hover {
+    box-shadow: 0 16px 48px rgba(80, 65, 30, 0.08);
+}
+
+.encabezado-formulario {
+    margin-bottom: 28px;
+}
+
+.encabezado-formulario h2 {
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--texto);
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+
+.encabezado-formulario h2 span {
+    color: var(--verde);
+}
+
+.descripcion-login {
+    font-size: 15px;
+    color: var(--texto-secundario);
+    line-height: 1.4;
+}
+
+/* 6. Formulario y Campos de entrada */
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.campo-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-login label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--texto);
+    margin-bottom: 8px;
+}
+
+.encabezado-campo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.encabezado-campo label {
+    margin-bottom: 0;
+}
+
+.enlace-olvido,
+.pie-tarjeta-login a {
+    color: var(--verde);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.enlace-olvido:hover,
+.pie-tarjeta-login a:hover {
+    color: var(--verde-oscuro);
+    text-decoration: underline;
+}
+
+/* Inputs estilizados con icono integrado */
+.contenedor-input-icono {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Posición fija y estática del icono a la izquierda */
+.icono-input {
+    position: absolute;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    color: #858b9b;
+    pointer-events: none;
+    z-index: 2; /* Asegura que esté siempre visible sobre el fondo del input */
+}
+
+/* Espacio interno obligatorio a la izquierda para que el texto no toque el icono */
+.contenedor-input-icono input {
+    width: 100% !important;
+    min-height: 50px !important;
+    padding: 12px 16px 12px 48px !important; /* ¡Los 48px de la izquierda evitan que se monten las letras! */
+    border: 1px solid #d8dce3;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.contenedor-input-icono input::placeholder {
+    color: #858b9b;
+}
+
+.contenedor-input-icono input:focus {
+    border-color: var(--verde);
+    box-shadow: 0 0 0 4px rgba(16, 76, 64, 0.1);
+}
+
+.contenedor-input-icono input:focus + .icono-input,
+.contenedor-input-icono:focus-within .icono-input {
+    color: var(--verde);
+}
+
+/* Botón mostrar/ocultar contraseña */
+.contenedor-contrasena input {
+    padding-right: 90px !important;
+}
+
+.mostrar-contrasena {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: var(--verde);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.mostrar-contrasena:hover {
+    background-color: #f0f7eb;
+    color: var(--verde-oscuro);
+}
+
+/* Mensaje de Error */
+.error-login {
+    padding: 14px 16px;
+    border: 1px solid #f3c9c4;
+    border-radius: 12px;
+    background-color: #fff0ed;
+    color: #a52b20;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Botón principal de Iniciar Sesión */
+.boton-login-cliente {
+    width: 100%;
+    min-height: 52px;
+    margin-top: 6px;
+    padding: 14px 24px;
+    background-color: var(--verde);
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.boton-login-cliente:hover {
+    background-color: var(--verde-oscuro);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 76, 64, 0.2);
+}
+
+.boton-login-cliente:active {
+    transform: translateY(0);
+}
+
+.boton-login-cliente .flecha {
+    font-size: 22px;
+    line-height: 1;
+}
+
+/* Pie de la tarjeta: Registro */
+.pie-tarjeta-login {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid #eeeee8;
+    text-align: center;
+    font-size: 14px;
+    color: var(--texto-secundario);
+}
+
+.pie-tarjeta-login a {
+    color: var(--verde);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.pie-tarjeta-login a:hover {
+    color: var(--verde-oscuro);
+    text-decoration: underline;
+}
+
+/* 7. Diseño responsivo (Tabletas y Celulares) */
+@media (max-width: 980px) {
+    .contenedor-login-cliente {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        margin-top: 0;
+        padding-bottom: 40px;
+    }
+
+    .presentacion-cliente {
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentacion-cliente .etiqueta-bienvenida {
+        align-self: center;
+    }
+
+    .presentacion-cliente > p {
+        max-width: 100%;
+    }
+
+    .tarjeta-confianza {
+        text-align: left;
+    }
+
+    .tarjeta-login-cliente {
+        padding: 36px 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .encabezado-login {
+        padding: 16px 5%;
+    }
+
+    .encabezado-login .logo {
+        font-size: 24px;
+    }
+
+    .encabezado-login .logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .volver-sitio {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .tarjeta-login-cliente {
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    .encabezado-formulario h2 {
+        font-size: 28px;
+    }
+
+    .imagen-login-cliente img {
+        height: 200px;
+    }
+}

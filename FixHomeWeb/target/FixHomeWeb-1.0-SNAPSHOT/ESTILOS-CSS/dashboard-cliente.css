@@ -1,0 +1,231 @@
+/* ==========================================================================
+   DASHBOARD CLIENTE (VERSIÓN WEB ADAPTADA DEL WIREFRAME)
+   ========================================================================== */
+
+.dashboard-cliente-web .saludo-dashboard {
+    margin-bottom: 28px;
+}
+
+.dashboard-cliente-web .saludo-dashboard h1 {
+    font-size: clamp(32px, 3.5vw, 42px);
+    font-weight: 800;
+    color: var(--texto);
+    letter-spacing: -1.5px;
+}
+
+.dashboard-cliente-web .saludo-dashboard h1 span {
+    color: var(--verde);
+}
+
+.dashboard-cliente-web .saludo-dashboard p {
+    font-size: 18px;
+    color: var(--texto-secundario);
+    margin-top: 4px;
+}
+
+/* Banner Principal del Cliente */
+.banner-cliente-web {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg, #fefaf4 0%, #f4f8f0 100%);
+    border: 1px solid #eef3ea;
+    border-radius: 24px;
+    padding: 36px 40px;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 20px rgba(80, 65, 30, 0.03);
+}
+
+.banner-texto h2 {
+    font-size: clamp(28px, 3vw, 38px);
+    font-weight: 800;
+    color: var(--verde-oscuro);
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.banner-texto p {
+    font-size: 16px;
+    color: var(--texto-secundario);
+    line-height: 1.5;
+    margin-bottom: 24px;
+    max-width: 480px;
+}
+
+.boton-banner-cliente {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 28px;
+    background-color: var(--verde);
+    color: #ffffff;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.boton-banner-cliente:hover {
+    background-color: var(--verde-oscuro);
+    transform: translateY(-2px);
+}
+
+.banner-ilustracion {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.banner-ilustracion img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Secciones generales del dashboard */
+.seccion-dashboard-web {
+    margin-bottom: 36px;
+}
+
+.encabezado-seccion-web {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.encabezado-seccion-web h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--texto);
+    letter-spacing: -0.5px;
+}
+
+.enlace-ver-todos {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--verde);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.enlace-ver-todos:hover {
+    color: var(--verde-oscuro);
+    text-decoration: underline;
+}
+
+/* Cuadrícula de Servicios (Grid web) */
+.grid-servicios-web {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.tarjeta-servicio-web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    background-color: #ffffff;
+    border: 1px solid #faf5eb;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 3px 16px rgba(80, 65, 30, 0.035);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.tarjeta-servicio-web:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(80, 65, 30, 0.06);
+    border-color: var(--verde);
+}
+
+.icono-servicio-web {
+    font-size: 32px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #f0f7eb;
+    border-radius: 50%;
+}
+
+.tarjeta-servicio-web h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--texto);
+    text-align: center;
+}
+
+/* Tarjeta vacía de solicitudes */
+.tarjeta-vacia-solicitudes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px 32px;
+    background-color: #ffffff;
+    border: 1px solid #faf5eb;
+    border-radius: 20px;
+    box-shadow: 0 3px 16px rgba(80, 65, 30, 0.035);
+}
+
+.icono-vacio {
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background-color: #f4f8f0;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+.tarjeta-vacia-solicitudes h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--texto);
+    margin-bottom: 4px;
+}
+
+.tarjeta-vacia-solicitudes p {
+    font-size: 14px;
+    color: var(--texto-secundario);
+    line-height: 1.4;
+}
+
+/* Responsividad para pantallas medianas y pequeñas */
+@media (max-width: 1100px) {
+    .grid-servicios-web {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .banner-cliente-web {
+        grid-template-columns: 1fr;
+        padding: 28px 24px;
+    }
+    .banner-ilustracion img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-servicios-web {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .tarjeta-vacia-solicitudes {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 18px;
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nosotros | FixHome</title>
+
+        <link rel="stylesheet" href="ESTILOS-CSS/estilo-principal.css">
+    </head>
+
+    <body>
+        <header class="encabezado">
+            <a href="index.html" class="logo">
+                <img src="Imagenes/logo.png" alt="">
+                FixHome
+            </a>
+
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="como-funciona.html">Cómo funciona</a>
+                <a href="nosotros.html" class="activo" aria-current="page">
+                    Nosotros
+                </a>
+            </nav>
+
+            <div class="accesos-usuario">
+                <a href="login-cliente.jsp" class="boton-cliente">
+                    Iniciar sesión como cliente
+                </a>
+
+                <a href="login-trabajador.jsp" class="boton-trabajador">
+                    Iniciar sesión como trabajador
+                </a>
+
+                <a href="login.jsp" class="boton-admin">
+                    Acceso administrador
+                </a>
+            </div>
+        </header>
+
+        <main class="pagina-nosotros">
+
+            <!-- Presentación -->
+            <section class="principal-nosotros"
+                     aria-labelledby="titulo-nosotros">
+
+                <div class="contenido-nosotros">
+                    <h1 id="titulo-nosotros">
+                        <span>!Conoce</span> FixHome!
+                    </h1>
+
+
+                </div>
+
+                <div class="imagen-nosotros">
+                    <img
+                        src="Imagenes/nosotros-principal.png"
+                        alt="Dos personas revisando un proyecto de renovación del hogar">
+                </div>
+            </section>
+
+            <!-- Características de FixHome -->
+            <section class="caracteristicas-nosotros"
+                     aria-label="Características de FixHome">
+
+                <article class="tarjeta-nosotros">
+                    <img
+                        src="Imagenes/confianza.png"
+                        alt=""
+                        class="imagen-caracteristica">
+
+                    <div class="contenido-caracteristica">
+                        <h2>Confianza</h2>
+                        <p>
+                            Los perfiles de los trabajadores pasan
+                            por un proceso de validación.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-nosotros tarjeta-organizacion">
+                    <img
+                        src="Imagenes/organizacion.png"
+                        alt=""
+                        class="imagen-caracteristica">
+
+                    <div class="contenido-caracteristica">
+                        <h2>Organización</h2>
+                        <p>
+                            Las solicitudes y el avance de cada
+                            servicio se consultan desde la app.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="tarjeta-nosotros">
+                    <img
+                        src="Imagenes/oportunidades.png"
+                        alt=""
+                        class="imagen-caracteristica">
+
+                    <div class="contenido-caracteristica">
+                        <h2>Oportunidades</h2>
+                        <p>
+                            Los trabajadores pueden mostrar sus
+                            servicios y atender solicitudes.
+                        </p>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Aplicación móvil y panel administrativo -->
+            <section class="experiencias-nosotros"
+                     aria-labelledby="titulo-experiencias">
+
+                <h2 id="titulo-experiencias">
+                    <span>Una plataforma</span> para dos experiencias
+                </h2>
+
+                <div class="lista-experiencias">
+
+                    <article class="experiencia">
+                        <div class="imagen-experiencia">
+                            <img src="Imagenes/app-movil.png" alt="">
+                        </div>
+
+                        <div class="contenido-experiencia">
+                            <h3>App móvil: clientes y trabajadores</h3>
+                            <p>
+                                Clientes que buscan ayuda para su hogar
+                                y trabajadores que ofrecen sus servicios,
+                                todo en una misma app.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="experiencia">
+                        <div class="imagen-experiencia">
+                            <img src="Imagenes/panel-web.png" alt="">
+                        </div>
+
+                        <div class="contenido-experiencia">
+                            <h3>Panel web: conoce FixHome</h3>
+                            <p>
+                                Todos nuestros servicios, guia de uso de nuestra plataforma y acerca de nosotros.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+    </body>
+</html>

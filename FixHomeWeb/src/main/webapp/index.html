@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FixHome | Soluciones para tu hogar</title>
+
+        <link rel="stylesheet" href="ESTILOS-CSS/estilo-principal.css">
+    </head>
+
+    <body>
+        <header class="encabezado">
+            <a href="index.html" class="logo">
+                <img src="Imagenes/logo.png" alt="">
+                FixHome
+            </a>
+
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="index.html" class="activo" aria-current="page">
+                    Inicio
+                </a>
+                <a href="servicios.html">Servicios</a>
+                <a href="como-funciona.html">Cómo funciona</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
+
+            <div class="accesos-usuario">
+                <a href="login-cliente.jsp" class="boton-cliente">
+                    Iniciar sesión como cliente
+                </a>
+
+                <a href="login-trabajador.jsp" class="boton-trabajador">
+                    Iniciar sesión como trabajador
+                </a>
+
+                <a href="login.jsp" class="boton-admin">
+                    Acceso administrador
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="principal" aria-labelledby="titulo-principal">
+                <div class="contenido-principal">
+                    <h1 id="titulo-principal">
+                        Soluciones <span>confiables</span><br>
+                        para tu hogar
+                    </h1>
+
+                    <p>Encuentra apoyo para lo que tu hogar necesita.</p>
+
+                    <a href="#que-es-fixhome" class="boton-principal">
+                        ¿Qué es FixHome?
+                        <span class="flecha" aria-hidden="true">›</span>
+                    </a>
+                </div>
+
+                <div class="imagen-principal">
+                    <img
+                        src="Imagenes/imagenprin.png"
+                        alt="Técnico con herramientas"
+                        >
+                </div>
+            </section>
+            <section id="que-es-fixhome"
+                     class="que-es-fixhome"
+                     aria-labelledby="titulo-fixhome">
+
+                <div class="contenido-fixhome">
+                    <div class="texto-fixhome">
+                        <h2 id="titulo-fixhome">
+                            ¿Qué es <span>FixHome</span>?
+                        </h2>
+
+                        <p>
+                            FixHome es una plataforma que conecta a personas que necesitan
+                            servicios para su hogar con trabajadores que ofrecen apoyo en
+                            instalación, reparación y mantenimiento.
+                        </p>
+
+                        <p>
+                            Desde la aplicación móvil, los clientes pueden solicitar un
+                            servicio, consultar al trabajador asignado, dar seguimiento
+                            a su solicitud y calificar la atención recibida.
+                        </p>
+
+                        <p>
+                            Los trabajadores pueden registrarse, enviar su documentación
+                            y, después de la validación de su cuenta, aceptar solicitudes
+                            relacionadas con los servicios que ofrecen.
+                        </p>
+                    </div>
+
+                    <div class="imagen-fixhome">
+                        <img src="Imagenes/queEsFix.png"
+                             alt="Trabajador realizando labores de carpintería">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </body>
+</html>
